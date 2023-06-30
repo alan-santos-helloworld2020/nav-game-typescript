@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        position: static;
+                       
+        #meteoro{
+            align-self: center;
+            position: relative;
+            width: 150px;
+            animation: passar 5s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes passar {
+            0%{top: -10px; transform: rotate(0deg);}
+            100%{
+                top: 550px; 
+                transform: rotate(720deg); 
+            }            
+        }
+
+        
+        #contador-nave{
+            align-self: center;
+            position: relative;
+
+        }
+        #contador-meteoro{
+            align-self: center;
+            position: relative;
+
+        }
+
+
+
+        #naveHeroContainer {
+            position: absolute;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+        }
+    }
+}
